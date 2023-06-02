@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>Quiz</servlet-name>
+        <servlet-class>Servlet.Quiz</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Result</servlet-name>
+        <servlet-class>Servlet.Result</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Quizzez</servlet-name>
+        <servlet-class>Servlet.Quizzez</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Timer</servlet-name>
+        <servlet-class>Servlet.Timer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Quiz</servlet-name>
+        <url-pattern>/Quiz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Result</servlet-name>
+        <url-pattern>/Result</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Quizzez</servlet-name>
+        <url-pattern>/Quizzez</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Timer</servlet-name>
+        <url-pattern>/Timer</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
